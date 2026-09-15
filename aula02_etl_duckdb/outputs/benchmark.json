@@ -1,0 +1,18 @@
+{
+  "generated_at_utc": "2026-09-15T03:03:02.140116+00:00",
+  "fact_rows": 30,
+  "cases": 7,
+  "patients": 7,
+  "csv_bytes": 3537,
+  "parquet_bytes": 11056,
+  "parquet_reduction_percent": -212.58,
+  "query_times_ms": [
+    15.622,
+    5.654,
+    10.554
+  ],
+  "source_sha256": {
+    "cases.csv": "d74684b4794b5095c32ca607ab5d6b1f8d04f888a607f4fd48470c8ffe885a0b",
+    "tracks.csv": "82b31333be20ca912ded93f46bf3ae42db281da40515a9945acc57749da9ffd0"
+  }
+}
