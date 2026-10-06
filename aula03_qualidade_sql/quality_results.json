@@ -1,0 +1,324 @@
+{
+  "01_resumo_e_duplicatas": [
+    {
+      "total_registros": 30,
+      "duplicatas_completas": 0,
+      "ids_duplicados": 0,
+      "duplicatas_no_grao": 0,
+      "casos": 7,
+      "pacientes": 7
+    }
+  ],
+  "02_completude_por_campo": [
+    {
+      "tabela": "dim_case",
+      "campo": "anesthesia_type",
+      "total": 7,
+      "nulos": 0,
+      "completude_pct": 100.0
+    },
+    {
+      "tabela": "dim_case",
+      "campo": "approach",
+      "total": 7,
+      "nulos": 0,
+      "completude_pct": 100.0
+    },
+    {
+      "tabela": "dim_case",
+      "campo": "asa_class",
+      "total": 7,
+      "nulos": 0,
+      "completude_pct": 100.0
+    },
+    {
+      "tabela": "dim_case",
+      "campo": "department",
+      "total": 7,
+      "nulos": 0,
+      "completude_pct": 100.0
+    },
+    {
+      "tabela": "dim_case",
+      "campo": "emergency_operation",
+      "total": 7,
+      "nulos": 0,
+      "completude_pct": 100.0
+    },
+    {
+      "tabela": "dim_case",
+      "campo": "operation_type",
+      "total": 7,
+      "nulos": 0,
+      "completude_pct": 100.0
+    },
+    {
+      "tabela": "dim_case",
+      "campo": "position",
+      "total": 7,
+      "nulos": 0,
+      "completude_pct": 100.0
+    },
+    {
+      "tabela": "dim_patient",
+      "campo": "age_years",
+      "total": 7,
+      "nulos": 0,
+      "completude_pct": 100.0
+    },
+    {
+      "tabela": "dim_patient",
+      "campo": "bmi_kg_m2",
+      "total": 7,
+      "nulos": 0,
+      "completude_pct": 100.0
+    },
+    {
+      "tabela": "dim_patient",
+      "campo": "height_cm",
+      "total": 7,
+      "nulos": 0,
+      "completude_pct": 100.0
+    },
+    {
+      "tabela": "dim_patient",
+      "campo": "sex",
+      "total": 7,
+      "nulos": 0,
+      "completude_pct": 100.0
+    },
+    {
+      "tabela": "dim_patient",
+      "campo": "weight_kg",
+      "total": 7,
+      "nulos": 0,
+      "completude_pct": 100.0
+    },
+    {
+      "tabela": "fact_bp_measurement",
+      "campo": "art_dbp_mmhg",
+      "total": 30,
+      "nulos": 1,
+      "completude_pct": 96.67
+    },
+    {
+      "tabela": "fact_bp_measurement",
+      "campo": "art_mbp_mmhg",
+      "total": 30,
+      "nulos": 0,
+      "completude_pct": 100.0
+    },
+    {
+      "tabela": "fact_bp_measurement",
+      "campo": "art_sbp_mmhg",
+      "total": 30,
+      "nulos": 1,
+      "completude_pct": 96.67
+    },
+    {
+      "tabela": "fact_bp_measurement",
+      "campo": "case_key",
+      "total": 30,
+      "nulos": 0,
+      "completude_pct": 100.0
+    },
+    {
+      "tabela": "fact_bp_measurement",
+      "campo": "error_dbp_mmhg",
+      "total": 30,
+      "nulos": 1,
+      "completude_pct": 96.67
+    },
+    {
+      "tabela": "fact_bp_measurement",
+      "campo": "error_mbp_mmhg",
+      "total": 30,
+      "nulos": 0,
+      "completude_pct": 100.0
+    },
+    {
+      "tabela": "fact_bp_measurement",
+      "campo": "error_sbp_mmhg",
+      "total": 30,
+      "nulos": 1,
+      "completude_pct": 96.67
+    },
+    {
+      "tabela": "fact_bp_measurement",
+      "campo": "heart_rate_bpm",
+      "total": 30,
+      "nulos": 0,
+      "completude_pct": 100.0
+    },
+    {
+      "tabela": "fact_bp_measurement",
+      "campo": "label_key",
+      "total": 30,
+      "nulos": 0,
+      "completude_pct": 100.0
+    },
+    {
+      "tabela": "fact_bp_measurement",
+      "campo": "measurement_id",
+      "total": 30,
+      "nulos": 0,
+      "completude_pct": 100.0
+    },
+    {
+      "tabela": "fact_bp_measurement",
+      "campo": "nibp_dbp_mmhg",
+      "total": 30,
+      "nulos": 0,
+      "completude_pct": 100.0
+    },
+    {
+      "tabela": "fact_bp_measurement",
+      "campo": "nibp_mbp_mmhg",
+      "total": 30,
+      "nulos": 0,
+      "completude_pct": 100.0
+    },
+    {
+      "tabela": "fact_bp_measurement",
+      "campo": "nibp_sbp_mmhg",
+      "total": 30,
+      "nulos": 0,
+      "completude_pct": 100.0
+    },
+    {
+      "tabela": "fact_bp_measurement",
+      "campo": "pair_delta_seconds",
+      "total": 30,
+      "nulos": 0,
+      "completude_pct": 100.0
+    },
+    {
+      "tabela": "fact_bp_measurement",
+      "campo": "patient_key",
+      "total": 30,
+      "nulos": 0,
+      "completude_pct": 100.0
+    },
+    {
+      "tabela": "fact_bp_measurement",
+      "campo": "time_key",
+      "total": 30,
+      "nulos": 0,
+      "completude_pct": 100.0
+    }
+  ],
+  "03_valores_invalidos_e_consistencia": [
+    {
+      "teste": "ART_DBP fora de 20-160 mmHg",
+      "ocorrencias": 0
+    },
+    {
+      "teste": "ART_MBP fora de 25-200 mmHg",
+      "ocorrencias": 0
+    },
+    {
+      "teste": "ART_SBP fora de 40-260 mmHg",
+      "ocorrencias": 0
+    },
+    {
+      "teste": "Altura fora de 80-230 cm",
+      "ocorrencias": 0
+    },
+    {
+      "teste": "Classe de concordancia inconsistente",
+      "ocorrencias": 0
+    },
+    {
+      "teste": "Erro MBP inconsistente com NIBP - ART",
+      "ocorrencias": 0
+    },
+    {
+      "teste": "Frequencia cardiaca fora de 20-220 bpm",
+      "ocorrencias": 0
+    },
+    {
+      "teste": "IMC fora de 8-80 kg/m2",
+      "ocorrencias": 0
+    },
+    {
+      "teste": "Idade fora de 0-120 anos",
+      "ocorrencias": 0
+    },
+    {
+      "teste": "NIBP_DBP fora de 20-160 mmHg",
+      "ocorrencias": 0
+    },
+    {
+      "teste": "NIBP_MBP fora de 25-200 mmHg",
+      "ocorrencias": 0
+    },
+    {
+      "teste": "NIBP_SBP fora de 40-260 mmHg",
+      "ocorrencias": 0
+    },
+    {
+      "teste": "Ordem ART inconsistente (SBP >= MBP >= DBP)",
+      "ocorrencias": 0
+    },
+    {
+      "teste": "Ordem NIBP inconsistente (SBP >= MBP >= DBP)",
+      "ocorrencias": 0
+    },
+    {
+      "teste": "Pareamento temporal fora de 0-30 s",
+      "ocorrencias": 0
+    },
+    {
+      "teste": "Peso fora de 2-350 kg",
+      "ocorrencias": 0
+    },
+    {
+      "teste": "Rotulo ART de hipotensao inconsistente",
+      "ocorrencias": 0
+    },
+    {
+      "teste": "Rotulo NIBP de hipotensao inconsistente",
+      "ocorrencias": 0
+    },
+    {
+      "teste": "Sentinelas/strings vazias em chaves",
+      "ocorrencias": 0
+    },
+    {
+      "teste": "Sexo fora do dominio F/M",
+      "ocorrencias": 0
+    }
+  ],
+  "04_integridade_dimensional": [
+    {
+      "fk_paciente_sem_correspondencia": 0,
+      "fk_caso_sem_correspondencia": 0,
+      "fk_tempo_sem_correspondencia": 0,
+      "fk_rotulo_sem_correspondencia": 0,
+      "pk_paciente_duplicada": 0,
+      "pk_caso_duplicada": 0,
+      "pk_tempo_duplicada": 0,
+      "pk_rotulo_duplicada": 0
+    }
+  ],
+  "05_nulos_detalhados_para_decisao": [
+    {
+      "measurement_id": "M-5502-00029",
+      "case_key": "CASE-05502",
+      "time_key": 6569,
+      "art_sbp_mmhg": null,
+      "art_mbp_mmhg": 28.0,
+      "art_dbp_mmhg": null,
+      "error_sbp_mmhg": null,
+      "error_mbp_mmhg": 75.0,
+      "error_dbp_mmhg": null,
+      "decisao": "manter: PAM valida; pressao lateral opcional ausente"
+    }
+  ],
+  "camadas": [
+    {
+      "silver_validos": 30,
+      "silver_quarentena": 0
+    }
+  ]
+}
