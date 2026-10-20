@@ -1,0 +1,134 @@
+{
+  "model_name": "RandomForestRegressor",
+  "model_version": "rf_art_mbp_v1.0",
+  "evaluation": "LeaveOneGroupOut por patient_id",
+  "n_samples": 30,
+  "n_patients": 7,
+  "n_hypotension_reference": 6,
+  "random_forest_regression": {
+    "point": {
+      "mae_mmhg": 11.175839902998232,
+      "rmse_mmhg": 17.190000356503173,
+      "bias_mmhg": 1.5215951058200976,
+      "r2": 0.46443192984072446
+    },
+    "cluster_bootstrap_95_ci": {
+      "mae_mmhg": {
+        "lower_95": 7.238725465096437,
+        "upper_95": 18.422730504599546
+      },
+      "rmse_mmhg": {
+        "lower_95": 9.406976420599916,
+        "upper_95": 28.918244186687424
+      },
+      "bias_mmhg": {
+        "lower_95": -6.477805908289242,
+        "upper_95": 11.361835388729213
+      },
+      "r2": {
+        "lower_95": -0.6600207604713247,
+        "upper_95": 0.7774153986015995
+      }
+    }
+  },
+  "nibp_direct_baseline_regression": {
+    "point": {
+      "mae_mmhg": 8.033333333333333,
+      "rmse_mmhg": 15.559562975867927,
+      "bias_mmhg": -0.03333333333333333,
+      "r2": 0.5612090162696424
+    },
+    "cluster_bootstrap_95_ci": {
+      "mae_mmhg": {
+        "lower_95": 4.078947368421052,
+        "upper_95": 16.91304347826087
+      },
+      "rmse_mmhg": {
+        "lower_95": 5.44437384840557,
+        "upper_95": 29.767319979215255
+      },
+      "bias_mmhg": {
+        "lower_95": -5.291129032258064,
+        "upper_95": 9.324499999999976
+      },
+      "r2": {
+        "lower_95": -0.6409919831009625,
+        "upper_95": 0.9417631207279377
+      }
+    }
+  },
+  "random_forest_hypotension_threshold": {
+    "point": {
+      "prevalence": 0.2,
+      "sensitivity": 0.0,
+      "specificity": 1.0,
+      "accuracy": 0.8,
+      "balanced_accuracy": 0.5,
+      "f1": 0.0,
+      "mcc": 0.0,
+      "tn": 24,
+      "fp": 0,
+      "fn": 6,
+      "tp": 0
+    },
+    "cluster_bootstrap_95_ci": {
+      "sensitivity": {
+        "lower_95": 0.0,
+        "upper_95": 0.0
+      },
+      "specificity": {
+        "lower_95": 1.0,
+        "upper_95": 1.0
+      },
+      "balanced_accuracy": {
+        "lower_95": 0.5,
+        "upper_95": 0.5
+      },
+      "f1": {
+        "lower_95": 0.0,
+        "upper_95": 0.0
+      },
+      "mcc": {
+        "lower_95": 0.0,
+        "upper_95": 0.0
+      }
+    }
+  },
+  "nibp_direct_hypotension_threshold": {
+    "point": {
+      "prevalence": 0.2,
+      "sensitivity": 0.6666666666666666,
+      "specificity": 0.875,
+      "accuracy": 0.8333333333333334,
+      "balanced_accuracy": 0.7708333333333333,
+      "f1": 0.6153846153846154,
+      "mcc": 0.5122717640554154,
+      "tn": 21,
+      "fp": 3,
+      "fn": 2,
+      "tp": 4
+    },
+    "cluster_bootstrap_95_ci": {
+      "sensitivity": {
+        "lower_95": 0.0,
+        "upper_95": 0.8
+      },
+      "specificity": {
+        "lower_95": 0.6360795454545455,
+        "upper_95": 1.0
+      },
+      "balanced_accuracy": {
+        "lower_95": 0.3448275862068966,
+        "upper_95": 0.9
+      },
+      "f1": {
+        "lower_95": 0.0,
+        "upper_95": 0.8888888888888888
+      },
+      "mcc": {
+        "lower_95": -0.16666666666666666,
+        "upper_95": 0.8783100656536799
+      }
+    }
+  }
+}

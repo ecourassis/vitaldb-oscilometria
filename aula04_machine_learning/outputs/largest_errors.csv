@@ -1,0 +1,6 @@
+measurement_id,patient_id,case_id,fold_id,evaluation_role,art_mbp_reference_mmhg,art_mbp_predicted_mmhg,prediction_error_mmhg,absolute_error_mmhg,baseline_nibp_mbp_mmhg,model_name,model_version,sklearn_version,n_train_patients
+M-5502-00029,2440,CASE-05502,4,held_out_patient_test,28.0,98.702496031746,70.702496031746,70.702496031746,103.0,RandomForestRegressor,rf_art_mbp_v1.0,1.5.2,6
+M-2738-00007,2166,CASE-02738,2,held_out_patient_test,44.0,71.0015634920635,27.001563492063497,27.001563492063497,42.0,RandomForestRegressor,rf_art_mbp_v1.0,1.5.2,6
+M-4191-00016,5626,CASE-04191,7,held_out_patient_test,98.0,72.700085978836,-25.299914021164,25.299914021164,93.0,RandomForestRegressor,rf_art_mbp_v1.0,1.5.2,6
+M-2769-00015,5508,CASE-02769,6,held_out_patient_test,133.0,111.48153571428571,-21.518464285714288,21.518464285714288,117.0,RandomForestRegressor,rf_art_mbp_v1.0,1.5.2,6
+M-4480-00022,1916,CASE-04480,1,held_out_patient_test,125.0,107.68153571428576,-17.318464285714242,17.318464285714242,120.0,RandomForestRegressor,rf_art_mbp_v1.0,1.5.2,6
