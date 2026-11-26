@@ -1,0 +1,60 @@
+{
+  "dataset": "VitalDB v1.0.0",
+  "fact_grain": "Uma linha por aferição real de NIBP_MBP pareada à observação ART temporalmente mais próxima, no mesmo caso, com tolerância máxima de 30 segundos.",
+  "identifier_policy": "Identificadores são strings; não carregam significado quantitativo.",
+  "null_policy": "Ausências são nulos Arrow/Parquet. Não são usadas sentinelas -1, 999 ou strings vazias.",
+  "compression": "zstd",
+  "tables": {
+    "fact_bp_measurement": {
+      "measurement_id": "string, não nulo",
+      "patient_key": "string, não nulo",
+      "case_key": "string, não nulo",
+      "time_key": "int64, não nulo",
+      "label_key": "string, não nulo",
+      "nibp_sbp_mmhg": "float32, anulável",
+      "nibp_mbp_mmhg": "float32, não nulo",
+      "nibp_dbp_mmhg": "float32, anulável",
+      "art_sbp_mmhg": "float32, anulável",
+      "art_mbp_mmhg": "float32, não nulo",
+      "art_dbp_mmhg": "float32, anulável",
+      "heart_rate_bpm": "float32, anulável",
+      "pair_delta_seconds": "float32, não nulo",
+      "error_sbp_mmhg": "float32, anulável",
+      "error_mbp_mmhg": "float32, não nulo",
+      "error_dbp_mmhg": "float32, anulável"
+    },
+    "dim_patient": {
+      "patient_key": "string, não nulo",
+      "subject_id": "string, não nulo",
+      "sex": "string, anulável",
+      "age_years": "float32, anulável",
+      "height_cm": "float32, anulável",
+      "weight_kg": "float32, anulável",
+      "bmi_kg_m2": "float32, anulável"
+    },
+    "dim_case": {
+      "case_key": "string, não nulo",
+      "case_id": "string, não nulo",
+      "department": "string, anulável",
+      "operation_type": "string, anulável",
+      "approach": "string, anulável",
+      "position": "string, anulável",
+      "anesthesia_type": "string, anulável",
+      "asa_class": "string, anulável",
+      "emergency_operation": "boolean, anulável"
+    },
+    "dim_time": {
+      "time_key": "int64, não nulo",
+      "time_seconds": "float64, não nulo",
+      "time_minutes": "float32, não nulo",
+      "intraoperative_phase": "string, não nulo"
+    },
+    "dim_label": {
+      "label_key": "string, não nulo",
+      "art_hypotension": "boolean, não nulo",
+      "nibp_hypotension": "boolean, não nulo",
+      "agreement_class": "string, não nulo"
+    }
+  }
+}
+

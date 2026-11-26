@@ -1,0 +1,8 @@
+fold_id,test_patient_id,n_train_patients,n_train_samples,n_test_samples,patient_overlap
+1,1916,6,27,3,0
+2,2166,6,23,7,0
+3,2252,6,26,4,0
+4,2440,6,29,1,0
+5,3348,6,25,5,0
+6,5508,6,25,5,0
+7,5626,6,25,5,0

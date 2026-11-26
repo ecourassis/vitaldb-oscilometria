@@ -1,0 +1,22 @@
+2026-11-26T13:14:21.972549+00:00 INICIO ambiente
+2026-11-26T13:14:21.974664+00:00 SUCCESS ambiente
+2026-11-26T13:14:21.975230+00:00 INICIO ingestao_etl
+2026-11-26T13:14:22.284821+00:00 SUCCESS ingestao_etl
+2026-11-26T13:14:22.285394+00:00 INICIO qualidade
+2026-11-26T13:14:22.800728+00:00 Concluido: 30 validos; 0 em quarentena.
+2026-11-26T13:14:22.800887+00:00 Relatorio: /workspace/scratch/bf768e42b9c1/projeto_final_vitaldb/runs/20261126T131421959540Z/aula03_qualidade_sql/outputs/quality_results.md
+2026-11-26T13:14:22.871891+00:00 SUCCESS qualidade
+2026-11-26T13:14:22.872820+00:00 INICIO regressao
+2026-11-26T13:14:35.142174+00:00 Concluido: 30 predicoes fora do paciente; 7 pacientes.
+2026-11-26T13:14:35.142313+00:00 MAE: 11.18 mmHg | RMSE: 17.19 mmHg
+2026-11-26T13:14:35.142340+00:00 Relatorio: /workspace/scratch/bf768e42b9c1/projeto_final_vitaldb/runs/20261126T131421959540Z/aula04_machine_learning/outputs/evaluation_report.md
+2026-11-26T13:14:35.250442+00:00 SUCCESS regressao
+2026-11-26T13:14:35.251210+00:00 INICIO embeddings
+2026-11-26T13:14:52.767079+00:00 Concluido: 30 embeddings; dimensao 384; 90 relacoes de vizinhanca.
+2026-11-26T13:14:52.767236+00:00 Top-1 do mesmo paciente: 93.3% | referencia aleatoria: 13.8%
+2026-11-26T13:14:52.767281+00:00 Relatorio: /workspace/scratch/bf768e42b9c1/projeto_final_vitaldb/runs/20261126T131421959540Z/aula05_embeddings_vector_search/outputs/embedding_report.md
+2026-11-26T13:14:53.014300+00:00 SUCCESS embeddings
+2026-11-26T13:14:53.015129+00:00 INICIO relatorio
+2026-11-26T13:14:53.756958+00:00 Relatório consolidado: /workspace/scratch/bf768e42b9c1/projeto_final_vitaldb/runs/20261126T131421959540Z/summary/RELATORIO_FINAL.md
+2026-11-26T13:14:53.844970+00:00 SUCCESS relatorio
+2026-11-26T13:14:53.845711+00:00 Pipeline concluído: /workspace/scratch/bf768e42b9c1/projeto_final_vitaldb/runs/20261126T131421959540Z

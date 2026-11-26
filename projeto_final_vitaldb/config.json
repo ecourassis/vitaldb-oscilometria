@@ -1,0 +1,11 @@
+{
+  "project_version": "1.0.0",
+  "source_commit": "d0107cfdb18da96bcc53165a5187dd8342aa2d4a",
+  "dataset_reference": "VitalDB 1.0.0",
+  "api": "https://api.vitaldb.net/",
+  "selected_cases": [547, 567, 2738, 2769, 4191, 4480, 4974, 5502],
+  "pair_tolerance_seconds": 30,
+  "seed": 42,
+  "embedding_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "near_duplicate_cosine_threshold": 0.995
+}
